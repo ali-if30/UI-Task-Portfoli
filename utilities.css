@@ -1,0 +1,44 @@
+.flex{
+    display: flex;
+}
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-centre{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.p-light{
+    color: #6C6C6C;
+    line-height: 25px;
+    margin-bottom: 20px;       
+}
+
+.text-centre{
+    text-align: center;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.text-italic{
+    font-style: italic;
+}
+
+.text-under-heading{
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.color-star{
+    color: goldenrod;
+}
