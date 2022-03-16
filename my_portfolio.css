@@ -44,7 +44,7 @@ body{
 
 .personal-info-container{
     background-color: white;
-    width: 80%;
+    width: 85%;
     height: 40%;
     margin: 80px 0px;
     border-radius: 10px;
@@ -53,14 +53,21 @@ body{
 }
 
 .personal-info-container .left {
-    width: 60%;  
+    width: 60%; 
+    padding:20px; 
 
 }
 
-.personal-info-container .right {
-    width: 40%;
-    padding: 40px 10px 40px 100px;
+.personal-info-container .left img {
+    height: 100%;
+    width: 95%;
+    border-radius: 10px;
+}
 
+.personal-info-container .right {
+    width: 35%;
+    padding: 20px;
+    margin-top: 70px;
 }
 
 .personal-info-container .right h1{
@@ -91,6 +98,10 @@ body{
     margin-bottom: 5px;
 }
 
+.personal-info-container .right .contact-detail-container{
+    margin-top: 30px;
+}
+
 .personal-info-container .right .social-media-icons i {
     color : #b4b4b4;
     font-size: 40px;
@@ -99,17 +110,19 @@ body{
     opacity: 0.4;
 }
 
-.personal-info-container .left img {
-    height: 100%;
-    width: 95%;
-    border-radius: 10px;
+.personal-info-container .right .social-media-icons{
+    margin-top: 30px;
 }
+
+
+
+/*about container*/
 
 
 .about-myself-container{
     flex-direction: row;
-    margin: 330px 100px 50px 100px;
-    padding: 20px;
+    margin: 400px 0 100px 0px;
+    padding: 0px 120px;
 }
 
 .about-left{
@@ -128,8 +141,8 @@ body{
 }
 
 .about-right{
-    padding: 20px;
-    width: 45%;
+    padding: 20px 0px;
+    width: 40%;
 
 }
 
@@ -144,7 +157,7 @@ progress {
     height: 12px;
     border-radius: 5px;
     overflow: hidden;
-    width: 80%;
+    width: 100%;
     margin-bottom: 5px;
     margin-left: 5px;
     
@@ -157,6 +170,7 @@ progress {
     left: 0;
     height: 100%;
     width: 55%;
+    border-radius: 10px;
     background:linear-gradient(90deg, rgba(180,200,255,1) 0%, rgba(195,223,255,1) 0%, rgba(114,112,182,1) 0%, rgba(162,162,255,1) 35%, rgba(153,227,242,1) 98%);
   }  
 
@@ -325,10 +339,59 @@ progress {
     color: goldenrod;
 }
 
+/*footer container*/
+.footer-container{
+    background: black;
+    padding: 100px 120px 30px 120px;
+    width: 100%;
+}
 
+.footer-container h1{
+    color: white;
+    margin-bottom: 50px;
+}   
+
+.footer-container .about-me{
+    width: 35%;
+}
+
+.footer-container .news-letter{
+    width: 35%;
+
+}
+
+.news-letter .email-input-box input{
+    background: black;
+    color: white;
+    font-weight: lighter;
+    border:  #e0dbdb 0.05px solid ;
+    padding: 10px;
+    width: 70%;
+}
+
+.email-input-box button{
+    width:10%;
+    color: white;
+    background:linear-gradient(90deg, rgba(180,200,255,1) 0%, rgba(195,223,255,1) 0%, rgba(114,112,182,1) 0%, rgba(162,162,255,1) 35%, rgba(153,227,242,1) 98%);
+    outline: none;
+    border: none;
+    font-size: small;
+    font-weight: bold;   
+}
+
+.footer-container .follow-me{
+    width: 20%;
+}
+
+.footer-container .follow-me .icon-box i{
+    color: white;
+    font-size: xx-large;
+    margin-right: 15px;
+}
 
 @media screen and (max-width:512px) {
 
+  
     /*personal and header container*/
     .colored_section{
         background: black;
@@ -369,8 +432,9 @@ progress {
 
     /*This is about my self container*/
     .about-myself-container {
-        margin: 500px 10px 100px 10px;
+        margin: 600px 10px 100px 10px;
         flex-direction: column;
+        padding: 0px;
     }
 
     .about-left {
@@ -462,5 +526,27 @@ progress {
         margin-bottom: 20px;
     }
        
+    /*footer container */
+    .footer-container{
+        flex-direction: column;
+        margin: 0px;
+        padding: 100px 10px;
+
+    }
+    
+    .footer-container .about-me{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .footer-container .news-letter{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-container .follow-me{
+        width: 100%;
+    }
+    
 
 }

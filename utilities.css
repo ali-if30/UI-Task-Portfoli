@@ -15,6 +15,11 @@
     justify-content: space-between;
 }
 
+.justify-centre{
+    justify-content: center;
+}
+
+
 .p-light{
     color: #6C6C6C;
     line-height: 25px;
@@ -41,4 +46,18 @@
 
 .color-star{
     color: goldenrod;
+}
+
+.color-purple{
+    color: rgb(111, 42, 240);
+}
+
+.color-white{
+    color: white;
+}
+
+.border-arround{
+    border:  #e0dbdb 0.5px solid ;
+    padding: 7px 10px 0px 4px ;
+    border-radius: 30px;
 }
