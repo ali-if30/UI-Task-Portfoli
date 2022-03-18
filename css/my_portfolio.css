@@ -42,6 +42,11 @@ body{
     text-transform: uppercase;
 }
 
+.top-nav-container nav .nav-icon{
+    display: none;
+    color: white;
+}
+
 .personal-info-container{
     background-color: white;
     width: 85%;
@@ -408,6 +413,15 @@ progress {
 
     }
 
+    .top-nav-container nav .nav-icon{
+        display:inline;
+        padding-right: 20px;
+    }
+
+    .top-nav-container nav .nav-icon i{
+        font-size: 30px;
+    }
+
     .personal-info-container{
         width: 100%;
         margin: 20px 0px;
@@ -426,7 +440,7 @@ progress {
         margin-top:20px;
     }
 
-    .top-nav-container nav div:not(:first-child) {
+    .top-nav-container nav .nav-link {
         display: none;
     }
 
