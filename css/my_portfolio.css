@@ -14,23 +14,29 @@ body{
     background-color:#F2F2F2
 }
 
-
-.colored_section{
+.colored-section{
+    position: absolute;
     width : 100%;
     height: 700px;
+    z-index: -1;
     background: rgb(180,200,255);
     background: linear-gradient(90deg, rgba(180,200,255,1) 0%, rgba(195,223,255,1) 0%, rgba(114,112,182,1) 0%, rgba(162,162,255,1) 35%, rgba(153,227,242,1) 98%);
    
 }
 
 .top-nav-container{
-    padding:60px 120px; 
+    padding:60px 40px; 
+    z-index: 1;
 }
 
 .web-logo{
     color: white;
     font-weight: bolder;
     font-size: 28px;
+}
+
+.top-nav-container nav{
+ padding: 0px 20px ;
 }
 
 .top-nav-container nav  a{
@@ -49,18 +55,17 @@ body{
 
 .personal-info-container{
     background-color: white;
-    width: 85%;
-    height: 40%;
-    margin: 80px 0px;
+    margin: 80px 0px 0px 0px;
     border-radius: 10px;
     padding: 30px;
+    width: 70%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .personal-info-container .left {
     width: 60%; 
     padding:20px; 
-
+    min-width: fit-content;
 }
 
 .personal-info-container .left img {
@@ -70,7 +75,7 @@ body{
 }
 
 .personal-info-container .right {
-    width: 35%;
+    width: 30%;
     padding: 20px;
     margin-top: 70px;
 }
@@ -126,14 +131,12 @@ body{
 
 .about-myself-container{
     flex-direction: row;
-    margin: 400px 0 100px 0px;
-    padding: 0px 120px;
+    padding: 50px 40px;
 }
 
 .about-left{
     flex-direction: column;
-    margin-right: 150px;
-    max-width: 50%;
+    padding: 20px;
 
 }
 
@@ -145,9 +148,11 @@ body{
 
 }
 
+
+
 .about-right{
-    padding: 20px 0px;
-    width: 40%;
+    padding: 20px;
+    width: 35%;
 
 }
 
@@ -193,12 +198,16 @@ progress {
     border:  #e0dbdb 0.5px solid ;
     padding: 20px 25px;
     margin-right: 10px;
-    height: 120px;
+    margin-top: 10px;
 
 }
 
 .total-count-boxes div h1,p{
     margin-bottom: 5px;
+}
+
+.total-count-boxes div h1{
+    font-size: x-large;
 }
 
 .total-count-boxes div i {
@@ -211,7 +220,7 @@ progress {
 .offer-container{
     background: rgb(238, 236, 236);
     width: 100%;
-    padding: 100px 120px;
+    padding: 100px 40px;
 }
 
 .offer-header{
@@ -232,7 +241,9 @@ progress {
 .offer-feature-box{
     background: white;
     padding: 50px 40px;
+    margin: 10px;
     width: 30%;
+    min-width: 300px;
 }
 
 .offer-feature-box i{
@@ -248,7 +259,7 @@ progress {
 /*project container*/
 .project-container{
     width: 100%;
-    padding: 100px 120px;   
+    padding: 100px 40px;   
     background: white;
 }
 
@@ -283,15 +294,15 @@ progress {
 
 .project-box{
     width: 30%;
-    margin-bottom: 20px;
-    padding: 10px 70px;
+    margin: 20px;
 }
 
 .project-box-image img{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 80%;
+}
 
+.project-box-image{
+    width: 20%;
 }
 
 .project-box-design{
@@ -326,14 +337,16 @@ progress {
 
 .rating-container{
     width: 100%;
-    padding: 100px 120px;   
+    padding: 100px 20px;   
     background: rgb(238, 236, 236);
 }
 
 .rating-box{
     width: 30%;
+    min-width: 300px;
     padding: 50px 40px;
     background: white;
+    margin: 10px;
 }
 
 .rating-star{
@@ -347,7 +360,7 @@ progress {
 /*footer container*/
 .footer-container{
     background: black;
-    padding: 100px 120px 30px 120px;
+    padding: 100px 40px 30px 40px;
     width: 100%;
 }
 
@@ -358,10 +371,14 @@ progress {
 
 .footer-container .about-me{
     width: 35%;
+    min-width: 350px;
+    padding: 10px;
 }
 
 .footer-container .news-letter{
-    width: 35%;
+    width: 30%;
+    min-width: 350px;
+    padding: 10px;
 
 }
 
@@ -385,7 +402,9 @@ progress {
 }
 
 .footer-container .follow-me{
-    width: 20%;
+    width: 25%;
+    min-width: 300px;
+    padding: 20px;
 }
 
 .footer-container .follow-me .icon-box i{
@@ -394,11 +413,33 @@ progress {
     margin-right: 15px;
 }
 
-@media screen and (max-width:512px) {
 
-  
+@media screen and (max-width:850px){
+ 
+    .top-nav-container nav .nav-icon{
+        display:inline;
+    }
+    .top-nav-container nav .nav-link {
+        display: none;
+    }
+
+    .top-nav-container nav .nav-icon i{
+        font-size: 30px;
+    }
+
+
+}
+
+
+@media screen and (max-width:540px) {
+
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+
     /*personal and header container*/
-    .colored_section{
+    .colored-section{
         background: black;
     }
 
@@ -414,12 +455,7 @@ progress {
     }
 
     .top-nav-container nav .nav-icon{
-        display:inline;
-        padding-right: 20px;
-    }
-
-    .top-nav-container nav .nav-icon i{
-        font-size: 30px;
+        padding-right: 30px;
     }
 
     .personal-info-container{
@@ -440,15 +476,13 @@ progress {
         margin-top:20px;
     }
 
-    .top-nav-container nav .nav-link {
-        display: none;
-    }
-
+    
     /*This is about my self container*/
     .about-myself-container {
-        margin: 600px 10px 100px 10px;
+        margin: 50px 10px;
         flex-direction: column;
         padding: 0px;
+        
     }
 
     .about-left {
@@ -496,6 +530,7 @@ progress {
 
     .offer-feature-box{
         width: 100%;
+        margin: 0px;
         margin-bottom: 20px;
     }
 
@@ -515,6 +550,7 @@ progress {
    
        .project-box{
            width: 100%;
+           margin: 0px;
        }
    
        .project-container .offer-header h1{
@@ -537,6 +573,7 @@ progress {
 
     .rating-box{
         width: 100%;
+        margin: 0px;
         margin-bottom: 20px;
     }
        
@@ -550,16 +587,19 @@ progress {
     
     .footer-container .about-me{
         width: 100%;
+        margin: 0px;
         margin-bottom: 20px;
     }
     
     .footer-container .news-letter{
         width: 100%;
+        margin: 0px;
         margin-bottom: 20px;
     }
 
     .footer-container .follow-me{
         width: 100%;
+        margin: 0px;
     }
     
 
