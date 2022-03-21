@@ -1,0 +1,80 @@
+.flex{
+    display: flex;
+}
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-wrap div{
+    flex-grow: 1;
+}
+
+
+.item-centre{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-centre{
+    justify-content: center;
+}
+
+
+.p-light{
+    color: #6C6C6C;
+    line-height: 25px;
+    margin-bottom: 20px;       
+}
+
+.text-centre{
+    text-align: center;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.text-italic{
+    font-style: italic;
+}
+
+.text-under-heading{
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.color-star{
+    color: goldenrod;
+}
+
+.color-purple{
+    color: rgb(111, 42, 240);
+}
+
+.color-white{
+    color: white;
+}
+
+.border-arround{
+    border:  #e0dbdb 0.5px solid ;
+    padding: 7px 10px 0px 4px ;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+
+.min-width-4{
+    min-width: 400px;
+}
+
+@media screen and (max-width:540px){
+    .min-width-4{
+        min-width: 300px;
+    }
+    
+}

@@ -1,0 +1,606 @@
+@import 'utilities.css';
+@import 'media_quiries.css';
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    
+}
+
+body{
+    background-color:#F2F2F2
+}
+
+.colored-section{
+    position: absolute;
+    width : 100%;
+    height: 700px;
+    z-index: -1;
+    background: rgb(180,200,255);
+    background: linear-gradient(90deg, rgba(180,200,255,1) 0%, rgba(195,223,255,1) 0%, rgba(114,112,182,1) 0%, rgba(162,162,255,1) 35%, rgba(153,227,242,1) 98%);
+   
+}
+
+.top-nav-container{
+    padding:60px 40px; 
+    z-index: 1;
+}
+
+.web-logo{
+    color: white;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.top-nav-container nav{
+ padding: 0px 20px ;
+}
+
+.top-nav-container nav  a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 40px;
+    text-transform: uppercase;
+}
+
+.top-nav-container nav .nav-icon{
+    display: none;
+    color: white;
+}
+
+.personal-info-container{
+    background-color: white;
+    margin: 80px 0px 0px 0px;
+    border-radius: 10px;
+    padding: 30px;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.personal-info-container .left {
+    width: 60%; 
+    padding:20px; 
+    min-width: fit-content;
+}
+
+.personal-info-container .left img {
+    height: 100%;
+    width: 95%;
+    border-radius: 10px;
+}
+
+.personal-info-container .right {
+    width: 30%;
+    padding: 20px;
+    margin-top: 70px;
+}
+
+.personal-info-container .right h1{
+    font-size: 42px;
+    font-weight:bolder;
+    text-transform: uppercase;
+    margin-bottom:20px ;
+}
+
+.personal-info-container .right h6{
+    font-size: 12px;
+    font-weight:lighter;
+    text-transform: uppercase;
+    margin-bottom:15px ;
+}
+
+.personal-info-container .right h3{
+    font-size: 12px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom:5px ;
+}
+
+
+.personal-info-container .right .contact-detail-container i{
+    color :  purple;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.personal-info-container .right .contact-detail-container{
+    margin-top: 30px;
+}
+
+.personal-info-container .right .social-media-icons i {
+    color : #b4b4b4;
+    font-size: 40px;
+    margin-right: 5px;
+    display: inline-block;
+    opacity: 0.4;
+}
+
+.personal-info-container .right .social-media-icons{
+    margin-top: 30px;
+}
+
+
+
+/*about container*/
+
+
+.about-myself-container{
+    flex-direction: row;
+    padding: 50px 40px;
+}
+
+.about-left{
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.about-left .upper h1{
+    font-size:xx-large;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+}
+
+
+
+.about-right{
+    padding: 20px;
+    width: 35%;
+
+}
+
+progress {
+    opacity: 0;
+  }
+  
+.progress-container {
+    position: relative;
+    display: inline-block;
+    background: rgb(228, 227, 227);
+    height: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    
+  }
+
+.progress-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 55%;
+    border-radius: 10px;
+    background:linear-gradient(90deg, rgba(180,200,255,1) 0%, rgba(195,223,255,1) 0%, rgba(114,112,182,1) 0%, rgba(162,162,255,1) 35%, rgba(153,227,242,1) 98%);
+  }  
+
+.about-right h4{
+    margin-bottom: 20px;
+    font-weight:bold;
+    font-size: 13px;
+}
+
+.total-count-boxes {
+    flex-direction: row;
+}
+
+.total-count-boxes div {
+    border:  #e0dbdb 0.5px solid ;
+    padding: 20px 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+
+.total-count-boxes div h1,p{
+    margin-bottom: 5px;
+}
+
+.total-count-boxes div h1{
+    font-size: x-large;
+}
+
+.total-count-boxes div i {
+   color: rgb(180,200,255);
+   margin-bottom: 15px;
+   font-size: 20px;
+}
+
+/*offer conatiner*/
+.offer-container{
+    background: rgb(238, 236, 236);
+    width: 100%;
+    padding: 100px 40px;
+}
+
+.offer-header{
+    margin-bottom: 70px;
+}
+
+.offer-header h1{
+    font-size:xx-large;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.offer-features{
+    flex-direction: row;
+}
+
+.offer-feature-box{
+    background: white;
+    padding: 50px 40px;
+    margin: 10px;
+    width: 30%;
+    min-width: 300px;
+}
+
+.offer-feature-box i{
+    font-size: 50px;
+    color : #b4b4b4;
+    margin-bottom: 30px;
+}
+
+.offer-feature-box h1{
+    margin-bottom: 20px;
+}
+
+/*project container*/
+.project-container{
+    width: 100%;
+    padding: 100px 40px;   
+    background: white;
+}
+
+/*tab bar*/
+
+.tabs-bar{
+    padding: 0px 10px 15px 10px;
+
+}
+
+.tabs-bar button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .tabs-bar button:hover {
+    color:purple;
+  }
+  
+  .tabs-bar button.active {
+    color:purple;
+  }
+
+/*----------------------------*/  
+
+.project-box{
+    width: 30%;
+    margin: 20px;
+}
+
+.project-box-image img{
+    width: 80%;
+}
+
+.project-box-image{
+    width: 20%;
+}
+
+.project-box-design{
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.project-box-description{
+    text-align: center;
+    padding: 5px;
+}
+
+.project-container .load-button button{
+    width:170px;
+    height: 50px;
+    color: white;
+    background:linear-gradient(90deg, rgba(180,200,255,1) 0%, rgba(195,223,255,1) 0%, rgba(114,112,182,1) 0%, rgba(162,162,255,1) 35%, rgba(153,227,242,1) 98%);;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: small;
+    font-weight: bold;   
+}
+
+.project-container .load-button {
+    display: flex;
+    justify-content: center;
+}
+
+/*rating container*/
+
+.rating-container{
+    width: 100%;
+    padding: 100px 20px;   
+    background: rgb(238, 236, 236);
+}
+
+.rating-box{
+    width: 30%;
+    min-width: 300px;
+    padding: 50px 40px;
+    background: white;
+    margin: 10px;
+}
+
+.rating-star{
+    margin-top: 15px;
+}
+
+.rating-star i {
+    color: goldenrod;
+}
+
+/*footer container*/
+.footer-container{
+    background: black;
+    padding: 100px 40px 30px 40px;
+    width: 100%;
+}
+
+.footer-container h1{
+    color: white;
+    margin-bottom: 50px;
+}   
+
+.footer-container .about-me{
+    width: 35%;
+    min-width: 350px;
+    padding: 10px;
+}
+
+.footer-container .news-letter{
+    width: 30%;
+    min-width: 350px;
+    padding: 10px;
+
+}
+
+.news-letter .email-input-box input{
+    background: black;
+    color: white;
+    font-weight: lighter;
+    border:  #e0dbdb 0.05px solid ;
+    padding: 10px;
+    width: 70%;
+}
+
+.email-input-box button{
+    width:10%;
+    color: white;
+    background:linear-gradient(90deg, rgba(180,200,255,1) 0%, rgba(195,223,255,1) 0%, rgba(114,112,182,1) 0%, rgba(162,162,255,1) 35%, rgba(153,227,242,1) 98%);
+    outline: none;
+    border: none;
+    font-size: small;
+    font-weight: bold;   
+}
+
+.footer-container .follow-me{
+    width: 25%;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.footer-container .follow-me .icon-box i{
+    color: white;
+    font-size: xx-large;
+    margin-right: 15px;
+}
+
+
+@media screen and (max-width:850px){
+ 
+    .top-nav-container nav .nav-icon{
+        display:inline;
+    }
+    .top-nav-container nav .nav-link {
+        display: none;
+    }
+
+    .top-nav-container nav .nav-icon i{
+        font-size: 30px;
+    }
+
+
+}
+
+
+@media screen and (max-width:540px) {
+
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    /*personal and header container*/
+    .colored-section{
+        background: black;
+    }
+
+    .top-nav-container{
+        padding: 30px 0px;
+    }
+
+    .web-logo{
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+
+    }
+
+    .top-nav-container nav .nav-icon{
+        padding-right: 30px;
+    }
+
+    .personal-info-container{
+        width: 100%;
+        margin: 20px 0px;
+        border-radius: 0px;
+        flex-direction: column;
+
+    }
+
+    .personal-info-container .left {
+        width: 100%;
+    }
+
+    .personal-info-container .right{
+        width: 100%;
+        padding: 0px;
+        margin-top:20px;
+    }
+
+    
+    /*This is about my self container*/
+    .about-myself-container {
+        margin: 50px 10px;
+        flex-direction: column;
+        padding: 0px;
+        
+    }
+
+    .about-left {
+        max-width: 100%;
+        margin: 0px;
+    }
+
+    .about-left .upper{
+        width: 100%;
+    }
+
+    .total-count-boxes {
+        flex-direction: column;
+
+    }
+
+    .total-count-boxes div {
+        width: 100%;
+        margin:10px 0px;
+
+    }
+
+    .total-count-boxes div h1{
+        font-size: 20px;
+    }
+
+    .about-right {
+        margin: 0px;
+        width: 100%;
+        padding: 40px 0px;
+    }
+
+    .progress-container{
+        width: 100%;
+    }
+
+    /*offers container*/
+    .offer-container{
+        padding: 100px 10px;
+    }
+
+    .offer-features{
+        flex-direction: column;
+    }
+
+    .offer-feature-box{
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+    /* project container*/
+   
+      .project-container{
+          margin: 0px;
+          padding: 100px 10px;
+          width: 100%;
+      }
+   
+       .featured-projects{
+           flex-direction: column;
+           width: 100%;
+   
+       }
+   
+       .project-box{
+           width: 100%;
+           margin: 0px;
+       }
+   
+       .project-container .offer-header h1{
+           font-size: x-large;
+       }
+
+       /*rating container */
+    .text-under-heading{
+        width: 100%;
+      }
+
+    .rating-container{
+        margin: 0px;
+        padding: 100px 10px;
+    }
+
+    .rating-box-area{
+        flex-direction: column;
+    }
+
+    .rating-box{
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+       
+    /*footer container */
+    .footer-container{
+        flex-direction: column;
+        margin: 0px;
+        padding: 100px 10px;
+
+    }
+    
+    .footer-container .about-me{
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .footer-container .news-letter{
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+    .footer-container .follow-me{
+        width: 100%;
+        margin: 0px;
+    }
+    
+
+}
